@@ -1,0 +1,117 @@
+//Let us rock and roll
+import java.util.Scanner;
+//  FACULTY
+class  faculty
+{
+  private string id;
+  private string name;
+  private string college;
+  private string attendance;
+  Scanner sc=new Scanner(System.in);
+  //FACULTY DETAILS
+  void fd()
+  {
+      System.out.println("      Enter the faculty id number:");
+      id=sc.nextline();
+      System.out.println("      Enter the faculty name     :");
+      name=sc.nextLine();
+      System.out.println("      Enter the college name     :");
+      college=sc.nextline();
+      System.out.println("      Enter that the faculty is present /absent");
+      attendance=sc.nextline();
+  }
+  //DETAILS OF FACULTY
+  void df()
+  {
+      System.out.println("         faculty id        : "+id);
+      System.out.println("         faculty name      : "+name);
+      System.out.println("         faculty college   : "+college);
+      System.out.println("         faculty status    : "+attendance);
+       
+  }
+  //  STUDENT
+ class student
+  {
+       private string id;
+       private string name;
+       private String year;
+       private int n;
+       private string attendance;
+       Scanner sc1=new Scanner(System.in);
+       //STUDENT DETAILS
+       void sd()
+       {
+           System.out.println("       Enter the student id number:  ");  
+           id=sc1.nextLine();
+           System.olout.println("     Enter the name of the student:");
+           name=sc1.nextLine();
+           System.out.println("       Enter the year of studying :");
+           year=sc1.nextline();
+           System.out.println("       Enter the student is present/not");
+       }
+       //DETAILS OF STUDENT
+       void ds()
+       {
+           System.out.println("         student id number          :"+id);
+           System.out.println("         student name               :"+name);
+           System.out.println("         student year of studying   :"+year);
+           System.out.println("         student status             :"+atendance);
+           
+       }
+       //  FINE
+       void fine()
+       {
+           System.out.println("   If the student have less than 75% attendance ,they need to pay 2000  rupees fine");
+           System.out.println("   If the student have less than  45% attendance ,they are terminated from the college ");
+       }
+       // FEES OF THE STUDENT
+       void fees()
+       {
+           System.out.println("MAIN MENU: \n          1.MANAGEMENT\n          2.CONVENIER");
+           n=sc1.nextint();  // 1 (or) 2
+          
+          
+           if(n==1)//MANAGEMENT
+           {
+               System.out.println("         student id number          :"+id);
+               System.out.println("         student name               :"+name);
+               System.out.println("         student year of studying   :"+year);
+               System.out.println("         student status             :"+atendance);
+               System.out.println("    ");
+               System.out.println("         fee of the student is :---- 100000");
+           }
+           if(n==2)//CONVINIER
+           {
+               System.out.println("         student id number            :"+id);
+               System.out.println("         student name                 :"+name);
+               System.out.println("         student year of studying     :"+year);
+               System.out.println("         student status               :"+atendance);
+               System.out.println("    ");
+               System.out.println("     college  fee of the student is   :---- 35000");
+               System.out.println("     university fee of the student is :---- 3500");
+                System.out.println("     crt fee of the student is       :---- 4000");
+              
+           }
+           
+           
+       }
+    
+  }
+  
+}
+public class Project3 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc2=new Scanner(System.in);
+        System.out.println( "               ❤️‍---ATTENDANCE MANAGEMENT SYSTEM-------❤️‍    "   );
+        System.out.println("");
+        System.out.println("--------------👍Make sure to attend the college every day👍------------");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("               CHOOSE EITHER YOU ARE FACULTY  (OR) STUDENT 😍          ");
+        
+        System.out.println(" ");
+      
+    }
+}
