@@ -1,0 +1,98 @@
+import java.util.Scanner;
+public class Project 
+{
+          static int totalCost;
+          public static void main(String args[])
+          {
+             Scanner input=new Scanner(System.in);
+             Admin kids=new Admin();
+              kids.search();
+               kids.Kids();
+          }
+}
+                  
+class Admin
+{
+private String name;
+private long number;
+private long balance;
+Scanner sc1=new Scanner(System.in);
+int ch;
+void search()
+{
+    System.out.println("****************************😍MTIET KIDS WEAR😍********************");
+    System.out.println("Enter your name:");
+    name=sc1.next();
+    System.out.println("WELCOME "+name+" TO MTIET KIDS WEAR SHOPPING , HOPE YOU ENJOY YOUR SHOPPING");
+    //System.out.println("Enter your bill number");
+    //Long billno=sc1.nextLong();
+    System.out.println("Enter your mobile number:");
+    number=sc1.nextLong();
+    System.out.println("Enter ur cost");
+    balance=sc1.nextLong();
+}
+void Kids()
+{   
+    System.out.println("<**********HI!*******"+name+"************>::::");
+    System.out.println("------------------------------------------------");
+    System.out.println("YOU ARE:                    "+name);
+    System.out.println("============================================");
+    //System.out.println("YOUR BILL NUMBER "+billno);
+    System.out.println("======================================");
+    System.out.println("YOUR NUMBER                    "+number);
+    System.out.println("============================================");
+    System.out.println("WE HAVE A GREAT VARIETIES OF CLOTHES");
+    {
+        do{
+            
+           System.out.println("1.FROCKS ");
+           System.out.println("2.SKIRTS");
+           System.out.println("3.JEANS");
+           System.out.println("4.WESTERN");
+           System.out.println("5.CLASSIC");
+           System.out.println("6.Exit");
+           System.out.println("THANKYOU.......VISIT AGAIN!!!!");
+           System.out.println("ENTER YOUR CHOICE");
+           int ch=sc1.nextInt();
+           switch(ch)
+                      {
+                          case 1:
+                              System.out.println("enjoy great mtiet sales 25 percent on buy!!!!wow.....");
+                                 long discount=100;
+                                 balance=balance-discount;
+                                 System.out.println("after discount on frocks pay:::"+balance);
+                                 break;
+                          case 2:
+                              System.out.println("enjoy great mtiet sales 30 percent on buy!!!!wow....."); 
+                                 discount=(30/100)*balance;
+                                 System.out.println("after discount on skirts pay:::"+discount);
+                                 break;
+                          case 3:
+                              System.out.println("enjoy great mtiet sales 10 percent on buy!!!!wow....."); 
+                                 discount=(10/100)*balance;
+                                 System.out.println("after discount on jeans pay:::"+discount);
+                                 break;
+                          case 4:
+                              System.out.println("enjoy great mtiet sales 20 percent on buy!!!!wow....."); 
+                                 discount=(20/100)*balance;
+                                 System.out.println("after discount on western pay:::"+discount);
+                                 break;
+                          case 5:
+                              System.out.println("enjoy great mtiet sales 15 percent on buy!!!!wow....."); 
+                                 discount=(15/100)*balance;
+                                 System.out.println("after discount on classic pay:::"+discount);
+                                 break;
+                           case 6:
+                               System.out.println("THANK YOU.......VISIT AGAIN!!!");
+                          
+                      }
+        } while(ch!=6);
+    }
+}
+}
+
+
+
+
+                        
+
